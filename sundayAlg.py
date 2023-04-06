@@ -1,6 +1,5 @@
 
 def check(char, pat,lenpat,textindex):
-    i = 0
     j = lenpat - 1
     a = -1
     while j >= 0:
@@ -11,8 +10,7 @@ def check(char, pat,lenpat,textindex):
     return a
      
 def sundayAlg(text,pat):
-    t = len(text)
-    p = len(pat)
+    t,p = len(text),len(pat)
     i = 0
     j = p - 1
     while i < t-p :
